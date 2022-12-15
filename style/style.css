@@ -1,0 +1,90 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;  
+}
+
+header {
+    background-color: #F56349;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+.disc{
+    position: fixed;
+    width: 1000px;
+    top: 10px;
+    left: -500px;
+    z-index: 0;
+}
+
+.header-nav-ul{
+    flex-direction: row;
+}
+
+.container{
+    max-width: 1900px;
+    margin: auto;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    padding: 9px;
+    margin: 10px;
+    background-color: white;
+    border: #8888 1px solid;
+    border-radius: 1%;
+    z-index: 1;
+}
+.card-img{
+    width: 300px;
+    height: 300px;
+}
+.card-descr{
+    text-align: center;
+}
+.card-select{
+    width: 100%;
+}
+
+
+img.rot {
+    animation: 3s ease-in 0s normal none infinite running rot;
+    -webkit-animation: 1s linear 0s normal none infinite running rot;
+    animation-timing-function: steps(8, end);
+    width: 100px;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
